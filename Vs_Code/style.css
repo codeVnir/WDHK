@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    gap: 6vh;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page1 #nav{
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* top: 0; */
+    /* background-color: red; */
+    /* z-index: 9999; */
+}
+
+#nav-part1{
+    height: 50%;
+    width: 60%;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+#img{
+    height: 2%;
+    object-fit: cover;
+    
+}
+
+#nav-part1 h3{
+    font-size: 1.3vw;
+    font-weight: 500;
+    padding: 0.8vh 0.5vw;
+    margin-right: 1vw;
+    font-family: "Roboto", sans-serif;
+    color: #E9EAEB;
+}
+
+#nav-text{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding-top: 0.2vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9vw;
+    font-weight: 200;
+    color: #9BA3AE;
+}
+
+#docs:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+#updates:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+#blog:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+#api:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+#extensions:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+#faq:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+#learn:hover{
+    color: #E9EAEB;
+    cursor: pointer;
+}
+
+#nav-part2{
+    height: 50%;
+    width: 40%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+}
+
+#nav-part2 h4{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: #9BA3B4;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#nav-part2 h4:hover{
+    background-color: #70747b51;
+    cursor: pointer;
+}
+
+#nav-part2 input{
+    padding: 1vh;
+    border-radius: 5px;
+    color: #E9EAEB;
+    font-size: 1vw ;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid #202020;
+}
+
+#nav-part2 input:focus{
+    outline: none;
+    border-color:#0072CA;
+} 
+
+#nav-part2 button{
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    font-size: 1.1vw;
+    background-color: #0072CA;
+    color: #E9EAEB;
+    border: 1px solid #202020;
+}
+
+#nav-part2 button:hover{
+    background-color: #025594;
+    cursor: pointer;
+}
+
+#page1 #nav2{
+    /* background-color: cadetblue; */
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9vw;
+    /* margin-top: 10vh; */
+}
+
+#nav2 a{
+    color: #0072CA;
+    font-weight: 600;
+}
+
+#nav2 h4{
+    color: #9BA3AE;
+}
+
+#page1 #content{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto" , sans-serif;
+    padding: 1.5vw 0;
+    /* background-color: red; */
+}
+
+#left{
+    height: 100%;
+    width: 30%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#capsule{
+    /* background-color: yellow; */
+    height: 8%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0 15px;
+    border: 1px solid #202020;
+    background-color: #171717;
+}
+
+#capsule h5{
+    color: #9BA3AE;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#left h1{
+    font-size: 4vw;
+    font-weight: 500;
+    /* background-color: pink; */
+    margin:2vw 0;
+    color: #E9EAEB;
+}
+
+#left button{
+    height: 10%;
+    width: fit-content;
+    padding: 1vw 1.2vw;
+    font-size: 1.2vw;
+    background-color: #0072CA;
+    border-radius: 5px;
+    border: 1px solid #202020;
+    color: #E9EAEB;
+    font-weight: 700;
+}
+
+#left button:hover{
+    background-color: #025594;
+    cursor: pointer;
+}
+
+#links{
+    margin-top: 3vh;
+    color: #9BA3AE;
+}
+
+#links h5{
+    font-size: 1vw ;
+}
+
+#links h5 a{
+    color: #0072CA;
+}
+
+#links p{
+    margin-top: 1vw;
+    font-size: 0.8vw;
+}
+
+#links p a{
+    color: #0072CA;
+}
+
+#right{
+    height: 100%;
+    width: 65%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#right img{
+    height: 32vw;
+    object-fit: contain;
+}
+
+#center{
+    width: 100%;
+    height: fit-content;
+    background-color:rgb(8, 8, 8) ; 
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #1B1B1B;
+}
+
+#center .block{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: red; */
+    height: fit-content;
+    width: 80%;
+    /* padding: 2vh; */
+    font-family: "Roboto" , sans-serif;
+    gap: 5vw;
+}
+
+#center .block #btext{
+    /* background-color: orange; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+#btext h3{
+    font-size: 2vw;
+    color: #E9EAEB;
+}
+
+#btext p{
+    font-size: 1vw;
+    line-height: 4vh;
+    font-weight: 600;
+    color: #9BA3B4;
+}
+
+#center .block #bimg{
+    /* background-color: orangered; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+}
+
+#bimg #lang{
+    /* background-color: orchid; */
+    width: 25%; 
+    height: fit-content;
+    display: flex;
+    gap: 2vh;
+}
+
+#lang h4{
+    font-size: 1.5vw;
+}
+
+#lang h5{
+    padding: 0.9vh;
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: #9BA3B4;
+}
+
+#bimg :nth-child(1) h4{
+    color: #CBCB41;
+}
+
+#bimg :nth-child(2) h4{
+    color: #519ABA;
+}
+
+#bimg :nth-child(6) h4{
+    color: #CC3E44;
+}
+
+#bimg :nth-child(8) h4{
+    color: #CBCB41;
+}
+
+#bimg :nth-child(10) h4{
+    color: #519ABA;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#bimg :last-child h4{
+    color: #A074C4;
+    font-size: 1.8vw;
+    rotate: 10deg;
+}
