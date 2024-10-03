@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work sans';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 80%;
+    width: 40%;
+    /* background-color: red; */
+    backdrop-filter: blur(12px) saturate(200%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+#card h2{
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffff;
+}
+
+#card h4{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    margin: 5vh;
+}
+
+#input-task{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#input-task input{
+    height: 2vw;
+    width: 60%;
+    backdrop-filter: blur(4px) saturate(141%);
+    -webkit-backdrop-filter: blur(4px) saturate(141%);
+    background-color: rgba(56, 66, 85, 0.74);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: #ffff;
+}
+
+#input-task ::-webkit-input-placeholder{
+    color: #ffff;
+    font-weight: 100;
+}
+
+
+
+#input-task button{
+    width: 15%; 
+    backdrop-filter: blur(4px) saturate(141%);
+    -webkit-backdrop-filter: blur(4px) saturate(141%);
+    background-color: rgba(83, 129, 214, 0.59);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid white;
+    color: #ffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#input-task button:hover{
+    backdrop-filter: blur(4px) saturate(141%);
+    -webkit-backdrop-filter: blur(4px) saturate(141%);
+    background-color: rgba(60, 92, 152, 0.59);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid white;
+}
+
+#task{
+    height: 70%;
+    width: 90%;
+    /* background-color: red; */
+    margin: 10px;
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.06);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 1vw;
+    overflow-y: scroll;
+}
+
+#task::-webkit-scrollbar{
+    background-color: transparent;
+    height: 2px;
+}
+
+
+.task-style{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3vw;
+    backdrop-filter: blur(12px) saturate(200%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.57);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.task-style button{
+    height: 100%;
+    width: 15%;
+    backdrop-filter: blur(4px) saturate(141%);
+    -webkit-backdrop-filter: blur(4px) saturate(141%);
+    background-color: rgba(83, 129, 214, 0.59);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid white;
+    color: #ffff;
+    font-size: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.task-style button:hover{
+    backdrop-filter: blur(4px) saturate(141%);
+    -webkit-backdrop-filter: blur(4px) saturate(141%);
+    background-color: rgba(60, 92, 152, 0.59);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid white;
+}
+
+.task-style h3{
+    color: #ffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin-left: 1vw;
+    font-size: 1vw;
+}
